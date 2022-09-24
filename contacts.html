@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body> 
+    <section style="background-color: rgb(247, 240, 240);" class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>
+                Contact us directly if you have any questions
+                <br>
+                One of our staff members will be happy to contact
+                you directly and answer your questions as soon
+                as possible
+
+
+            </p>        </div>
+
+        <div class="contain">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                    </div>
+                    <div class="text">
+
+                        <h3>Cell</h3>
+                        <p>
+                            0722779590
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                    </div>
+                    <div class="text">
+                        <h3>Cell</h3>
+                        <p>
+                            0833072491
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>
+                            info@drivingmasters.co.za
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">
+                            pin_drop
+                        </span>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Rietvlei Farm, 101 Swartkoppies Road
+                            <br>
+                            Alberton 1448
+
+                        </p>
+                        <br>
+                        <iframe scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=438&amp;height=299&amp;hl=en&amp;q=101%20Swartkoppies%20Road%20Alberton+(Master%20Drive)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        width="438" height="299" frameborder="0"></iframe> <a
+                        href='https://www.symptoma.es/'></a>
+                    <script type='text/javascript'
+                        src='https://embedmaps.com/google-maps-authorization/script.js?id=67256b9ad053cf1ae161e6ecc06196996be2e303'></script>
+  
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <div class="contactForm">
+                <form action="https://formsubmit.co/info@drivingmasters.co.za" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://drivingmasters.co.za/">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <label for="contact-name">Name</label>
+                        <input type="text" class="form-control" id="contact-name" name="name"
+                            placeholder="Enter your name.." onkeyup='validateName()'>
+                        <span class='error-message' id='name-error'></span>
+
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="contact-email">Email</label>
+                        <input type="email" class="form-control" id="contact-email" name="email"
+                            placeholder="Enter Email" onkeyup="validateEmail()">
+                        <span class="error-message" , id="email-error"></span>
+                    </div>
+                    <div class="inputBox">
+                        <label for="contact-phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="contact-phone" name="phone"
+                            placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+                        <span class='error-message' id='phone-error'></span>
+                    </div>
+                    <div class="inputBox">
+                        <label for='contactMessage'>Your Message</label>
+                        <textarea class="form-control" rows="5" id='contact-message' name='message'
+                            placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+                        <span class='error-message' id='message-error'></span>
+                    </div>
+
+                    <!-- <div class="inputBox"> -->
+                    <br>
+                    <button class="click" onclick='validateForm()' style="background-color: red;
+                color: white;
+                text-decoration: none;
+                border: 2px solid transparent;
+                font-weight: bold;
+                padding: 9px 22px;
+                border-radius: 30px;
+                transition: .4s;" class="btn btn-default">Submit</button>
+
+                    <!-- <a class="button" button onclick='validateForm()'>Submit</a> -->
+                    <span class='error-message' id='submit-error'></span>
+
+            </div>
+
+            </form>
+        </div>
+
+
+
+    </section>
+    
+</body>
+</html>
