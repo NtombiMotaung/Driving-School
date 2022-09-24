@@ -71,4 +71,95 @@
     line-height: 26px;
   }
 
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+    padding: 35px;
+    font-family: 'roboto', sans-serif ;
 
+}
+
+.wrapper h1{
+    font-size:3em ;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+}
+
+.service-box{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 35px;
+}
+
+.card{
+    min-height: 220px;
+    width:300px ;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    background: #fff;
+    margin: 10px 5px;
+    transition: 0.3s;
+}
+
+.card i{
+    margin-bottom: 20px;
+    color: red;
+}
+
+.card h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card p{
+    color: rgba(114, 7, 114, 0.8);
+    text-align: center;
+}
+
+.card:hover{
+    background: linear-gradient(90deg, 
+    rgba(2,2,36,0.7) 0%,
+    rgba(9, 9, 221, 0.7) 35%,
+    rgba(0, 212, 255, 0.7) 100%),
+    url('Gallery/why-kei-8e2gal_GIE8-unsplash.jpg');
+    opacity: 0.8s;
+    color: #fff;
+}
+
+.card:hover p{
+    color: #fff;
+
+}
+.card i {
+    color:#fff
+}
+
+@media(max-width: 991px){
+    .wrapper h1{
+        font-size: 2.5rem;
+    }
+    .wrapper p{
+        padding: 5px 15px;
+    }
+    .service-box{
+        flex-direction: column;
+        width: 100%
+
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
