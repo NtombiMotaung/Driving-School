@@ -318,7 +318,40 @@
     }
   }
 
+@media(max-width: 991px){
+    .wrapper h1{
+        font-size: 2.5rem;
+    }
+    .wrapper p{
+        padding: 5px 15px;
+    }
+    .service-box{
+        flex-direction: column;
+        width: 100%
 
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+@media(max-width: 991px){
+    .contactForm{
+        padding: 50px;
+    }
+    .contain{
+        flex-direction: column;
+
+    }
+    .contain .contactInfo{
+        margin-bottom: 40px;
+    }
+
+    .contain .contactInfo .contactForm{
+        width: 100%;
+    }
+}
 
 
 
