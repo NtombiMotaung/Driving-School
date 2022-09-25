@@ -5,27 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="style.js"></script>
+    <link rel="stylesheet" href="index.css">
+   
     <!-- <script src="header.js" type="text/javascript" defer></script> -->
     <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+
     
 </head>
-<body style="background-color: black;">
- <header>
-    <nav>
-        <h2 class="masterlogo" >Master <span>Drive</span> </h2>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-</header>
-<h1 style="color: white;text-align: center;padding-top: 50px;">Click on picture to enlarge it</h1>
+<body style="background-color: rgba(235, 220, 220, 0.747);">
+    <header>
+        <div class="nav container">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <a href="/" class="logo">Master <span>Drive</span> </a>
+            <!-- navigation list -->
+            <ul class="navbar">
+                <li> <a href="index.html" class="active">Home</a></li>
+                <li> <a href="index.html">About</a></li>
+                <li> <a href="index.html">Services</a></li>
+                <li> <a href="contacts.html">Contacts</a></li>
+                <li> <a href="gallery.html">Gallery</a></li>
+            </ul>
 
-    <div class="container">
+        </div>
+    </header>
+<h1 style="color: black;text-align: center;padding-top: 50px;">Click on picture to enlarge it</h1>
+
+    <div class="cont">
         
         <div class="gallery">
             <a href="Gallery/_DSC8958.jpg" data-lightbox = "models" data-title="Caption1">
@@ -60,23 +66,21 @@
         </div>
 
     </div>
-    <section  class="footer">
-        <div class="footer-con con">
+    <section class="footer">
+        <div class="footer-container container">
             <div class="footer-box">
                 <a href="#" class="logo">Master<span>Drive</span> </a>
                 
             </div>
             <div class="footer-box">
-                <br>
                 <h3>Page</h3>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="gallery.html">Gallery</a>
+                <a href="gallery.html">Home</a>
+                <a href="index.html">About</a>
+                <a href="index.html">Services</a>
+                <a href="#">Gallery</a>
                 <a href="contacts.html">Contacts</a>
             </div>
             <div class="footer-box">
-                <br>
               <h3>Contacts</h3>
                   <p>Email : info@drivingmasters.co.za</p>
                   <p>Cell : 0722779590</p>
@@ -84,15 +88,19 @@
                   <p>Address : Rietvlei Farm, 101 Swartkoppies Road
                       <br>
                       Alberton 1448
-    
+
                   </p>
           </div>
-    
+
         </div>
-    
+
     </section>
 
+
+
     
+    
+    <script src="style.js"></script>
     <script src="lightbox-plus-jquery.js"> </script>
    
 </body>
