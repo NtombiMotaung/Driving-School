@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Poppins:ital,wght@0,400;0,800;1,100;1,200&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#d90429 ;
+    --text-color: #020102;
+    --bg-color: #fff;
+}
+section{
+    padding: 4rem 0 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.logo span{
+    color: var(--bg-color);
+}
+
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.navbar a:hover, 
+.navbar .active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+} 
+
+.home{
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(Gallery/leohoho-GyrU_lxcFao-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
+.home-text{
+    padding-left: 130px;
+}
+.home-text h2{
+    font-size: 1.4rem;
+}
+
+.home-text h1{
+    font-size: 2.4rem;
+}
+
+.home-text span{
+    color: var(--bg-color);
+}
+
+.home-text p{
+    color: var(--bg-color);
+    font-weight: 500;
+    font-size: 0.938rem;
+}
+
+.service{
+    background: white ;
+    width: 100%;
+    padding: 100px 0px;
+  }
+  
+  .title h2{
+    color: #191919;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  
+  }
+  
+  .box{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  
+  }
+
+  .card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  
+  }
+  
+  h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  
+  .pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+  
+  .card .button{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+  
+  }
+  .card .button:hover{
+    background-color: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+  
+  }
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.about-img{
+    flex: 1 1 21rem;
+
+}
+
+.about-text{
+    flex: 1 1 21rem;
+}
+
+.about-text span{
+    font-weight: 500;
+    color: var(--main-color);
+    size: 800px;
+}
+
+.about-text h2{
+    font-size: 1.7rem;
+ 
+}
+
+.about-text p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.4rem;
+}
+
